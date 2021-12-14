@@ -1,0 +1,12 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login-page.js",
+  "scripts": {
+    "dev": "npx serve -p 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
