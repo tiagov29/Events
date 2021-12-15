@@ -2,9 +2,6 @@ const base_url = "http://localhost:3000"
 var form = document.getElementById("signUpform");
 form.addEventListener('submit', sign_upfunction);
 
-
-
-
 function sign_upfunction(e){
   //prevent the browser redirection
   e.preventDefault();
