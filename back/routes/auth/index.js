@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const google = require('./google');
+const facebook = require('./facebook');
 
 router.post('/sign-up', function(req,res){
     console.log("New request POST to /sign-up");
@@ -22,5 +23,6 @@ router.post('/sign-up', function(req,res){
 router.get('/failed', (req,res) => res.send(' app failed'))
 
 router.use('', google)
+router.use('', facebook)
 
 module.exports = router
