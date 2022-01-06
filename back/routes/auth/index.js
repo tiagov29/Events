@@ -3,6 +3,7 @@ const router = express.Router();
 const google = require("./google");
 const facebook = require("./facebook");
 const linkedin = require("./linkedin");
+const github = require("./github");
 
 router.post("/sign-up", function (req, res) {
   console.log("New request POST to /sign-up");
@@ -26,5 +27,6 @@ router.get("/failed", (req, res) => res.send(" app failed"));
 router.use("", google);
 router.use("", facebook);
 router.use("", linkedin);
+router.use("", github);
 
 module.exports = router;
